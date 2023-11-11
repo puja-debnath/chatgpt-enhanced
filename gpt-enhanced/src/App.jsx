@@ -42,6 +42,15 @@ function App() {
           <textarea  className='bg-gray-600 border-radius-2 border-solid p-1 rounded-md shadow-lg text-white m-4 w-5/6  '
           placeholder='Send a message'/>
         </div>
+
+        <div className='form'>
+          <form onSubmit={handlebutton}>
+            <input 
+            rows="1"
+            className=""  />
+          </form>
+
+        </div>
       </section>
     </div>
     )
