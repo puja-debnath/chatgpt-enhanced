@@ -3,8 +3,10 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ async function handleSubmit(e){
+     e.preventDefault();
+     console.log("submit")
+ }
   return (
     <div className='flex absolute bottom-0 left-0 right-0 top-0 bg-gray-700'>
       <aside className='w-1/5 bg-gray-900 h-full relative'>
@@ -44,7 +46,7 @@ function App() {
         </div>
 
         <div className='form'>
-          <form onSubmit={handlebutton}>
+          <form onSubmit={handleSubmit}>
             <input 
             rows="1"
             className=""  />
